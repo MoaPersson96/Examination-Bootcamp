@@ -6,11 +6,12 @@
     <meta name="description" content="En liten beskrivning av mig själv">
     <title>Om mig</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <header>
         <h1>Om mig</h1>
-        <nav>
+        <nav aria-label="Huvudnavigering">
             <ul>
                 <li><a href="/index.html">Hem</a></li>
                 <li><a href="#Om">Om mig</a></li>
@@ -19,50 +20,24 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>Moa Persson</h2>
-            <img src="MP.jpg" alt="Moa Persson's profil bild">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Moa Persson</h2>
+            <img src="MP.jpg" alt="Moa Persson's profil bild" width="300" height="300">
             <p>Här kommer det lite snabb info om mig själv.</p>
         </section>
 
-        <section id="info">
-            <h2>Om mig</h2>
-            <ul>
-                <li>Utbildning</li>
-                <li>Uppvuxen & familj</li>
-                <li>Mål</li>
-            </ul>
-        </section>
-
-        <section id="school">
-            <h2>Utbildning</h2>
-            <article>
-                <h3>Fullstackutvecklare JavaScript Chas Academy</h3>
-                <p>2024 - 2026</p>
-                <p>Utbildar mig just nu till fullstackutvecklare JavaScript på Chas Academy</p>
-            </article>
-            <article>
-                <h3>SunderbyFolkhögskola</h3>
-                <p>2014 - 2017</p>
-                <p>Gick allmäna gymnasie linje på SunderbyFolkhögskola</p>
-            </article>
-        </section>
-
-        <section id="uppvuxen">
-            <h2>Född och uppvuxen</h2>
-            <p>Jag född och uppvuxen i Luleå (föddes på Bodens BB, men det nämner man inte).
-                Familj består av Mamma och Pappa, två syskon, båda äldre systrar och 5 syskonbarn, äldsta är 10 år och yngsta är 3 år. </p>
-        </section>
-
-        <section id="mål">
-            <h2>Mål</h2>
-            <p>Min mål i livet är jsut nu att gå klart denna utbildning och få jobb som fullstackutvecklare. Andra mål relaterade till mina hobbies är åka på några bortaresor.
-                Köpa mer Lego. Gå på Zacke och Movits! live.</p>
+        <section id="info" aria-labelledby="info-heading">
+            <h2 id="info-heading">Om mig</h2>
+            <p>Jag är 28 år gammal och bor i Luleå. Just nu studerar jag till fullstackutvecklare JavaScript på Chas Academy.
+                Mina stora intressen är att gå på Luleå Hockey och stå på H-Läktaren. Kolla F1, lyssna på musik och bygga Lego.
+                Sen får man ju inte glömma att umgås med vännerna på H-Läktaren, samt vännerna utanför hockey och att umgås med familjen.
+                Mina största drömmar är att åka på några bortresor och att se Zacke och Movits live.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024.</p>
+        <p>&copy; 2024 Moa Persson.</p>
     </footer>
 </body>
 </html>
