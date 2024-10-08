@@ -82,6 +82,17 @@ body {
   
   /* Padda */
 @media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
   main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -89,21 +100,13 @@ body {
     }
 
     /* Om mig sidan på padda */
-    #about {
+    #about, #info {
         grid-column: 1 / 4;
       }
-    #info {
-        grid-column: 1 / 2;
-    }
 }
   
   /* Desktop */
 @media screen and (min-width: 1024px) {
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
     header {
       display: flex;
       justify-content: space-around;
@@ -115,10 +118,7 @@ body {
     }
     
     /* Om mig sidan på desktop */
-    #about {
+    #about, #info {
         grid-column: 1 / 4;
       }
-    #info {
-        grid-column: 1 / 4;
-    }
 }
